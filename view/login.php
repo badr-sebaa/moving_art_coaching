@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <title>Login SCHLASS</title>
-    <link rel="stylesheet" href="CSS/registertest.css">
+    <link rel="stylesheet" href="view/css/login.css">
   </head>
   <body>
     <?php
