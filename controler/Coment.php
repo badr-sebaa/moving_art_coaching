@@ -20,7 +20,7 @@ class Coment
 
     public function addcoment($id_user,$stars,$message){                         
         require('../model/config.php');
-        $stmt = $bdd->prepare("INSERT INTO `coment`(`id_user`, `stars`, `date`,`message`) VALUES ('?','?',NOW(),'?')");
+        $stmt = $bdd->prepare("INSERT INTO coment(id_user,stars,message,date) VALUES (?,?,?,NOW())");
         $stmt->execute(array($id_user,$stars,$message));
         header("location:../view/product.php");
     }
@@ -32,4 +32,4 @@ class Coment
         $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $data;
     }
-}
+}   

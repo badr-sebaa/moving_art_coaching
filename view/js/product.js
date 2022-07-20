@@ -43,11 +43,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
         readOnly: true
     });
 
+    $(".rated25").starRating({
+        totalStars: 5,
+        emptyColor: 'lightgray',
+        activeColor: 'green',
+        initialRating: 2.5,
+        readOnly: true
+    });
+
     $(".rated3").starRating({
         totalStars: 5,
         emptyColor: 'lightgray',
         activeColor: 'green',
         initialRating: 3,
+        readOnly: true
+    });
+
+    $(".rated35").starRating({
+        totalStars: 5,
+        emptyColor: 'lightgray',
+        activeColor: 'green',
+        initialRating: 3.5,
         readOnly: true
     });
 
@@ -59,6 +75,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         readOnly: true
     });
 
+    $(".rated45").starRating({
+        totalStars: 5,
+        emptyColor: 'lightgray',
+        activeColor: 'green',
+        initialRating: 4.5,
+        readOnly: true
+    });
+
     $(".rated5").starRating({
         totalStars: 5,
         emptyColor: 'lightgray',
@@ -66,7 +90,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
         initialRating: 5,
         readOnly: true
     });
-
     
-
 })

@@ -72,11 +72,20 @@
                         case 2:
                             echo '<div class="rated2"></div>';
                             break;
+                        case 2.5:
+                            echo '<div class="rated25"></div>';
+                            break;
                         case 3:
                             echo '<div class="rated3"></div>';
                             break;
+                        case 3.5:
+                            echo '<div class="rated35"></div>';
+                            break;
                         case 4:
                             echo '<div class="rated4"></div>';
+                            break;
+                        case 4.5:
+                            echo '<div class="rated45"></div>';
                             break;
                         case 5:
                             echo '<div class="rated5"></div>';

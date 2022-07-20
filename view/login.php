@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,11 @@
     <title>Document</title>
 </head>
 <body>
+  
+<?php include 'header.php' ;?>
+
 <main>
+
     <!-- Section: Design Block -->
 <section class="text-center text-lg-start">
   <style>
@@ -33,35 +38,34 @@
             ">
           <div class="card-body p-5 shadow-5 text-center">
             <h2 class="fw-bold mb-5">Sign up now</h2>
-            <form>
+            <form action="../controler/login_treatment.php" method="post">
          
-
               <!-- Email input -->
               <div class="form-outline mb-4">
-                <input type="email" id="form3Example3" class="form-control" />
+                <input type="email" id="form3Example3" name="email" class="form-control" require />
                 <label class="form-label" for="form3Example3">Email address</label>
               </div>
 
               <!-- Password input -->
               <div class="form-outline mb-4">
-                <input type="password" id="form3Example4" class="form-control" />
+                <input type="password" id="form3Example4" name="password" class="form-control" require />
                 <label class="form-label" for="form3Example4">Password</label>
               </div>
-
 
               <!-- Submit button -->
               <button type="submit" class="btn btn-dark btn-block mb-4">
                 Sign up
               </button>
 
-        
+              <a href="register.php">you don't have an acount ?</a>
+
             </form>
           </div>
         </div>
       </div>
 
       <div class="col-lg-6 mb-5 mb-lg-0">
-        <img src="" class="w-100 rounded-4 shadow-4"
+        <img src="img/login.JPG" class="w-100 rounded-4 shadow-4"
           alt="" />
       </div>
     </div>
@@ -69,7 +73,9 @@
   <!-- Jumbotron -->
 </section>
 <!-- Section: Design Block -->
-</main>  
+</main>
+
+<?php include 'footer.php' ;?>
 </body>
 </html>
 
